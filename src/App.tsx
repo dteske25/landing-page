@@ -8,13 +8,14 @@ function App() {
   const [reverse, setReverse] = useState(false);
 
   const [springs, api] = useSpring(() => ({
-    from: { x: 0 },
+    from: { x: 0, background: "#9e1e1e" },
   }));
 
   const handleClick = () => {
     api.start({
-      from: { x: X_MIN },
-      to: { x: X_MAX },
+      from: { x: X_MIN, background: "#9e1e1e" },
+      to: { x: X_MAX, background: "#303ebf" },
+      config: { precision: 0.0001 },
       reverse,
     });
     setReverse(!reverse);
@@ -27,7 +28,6 @@ function App() {
         style={{
           width: 80,
           height: 80,
-          background: "#ff6d6d",
           borderRadius: 8,
           ...springs,
         }}
