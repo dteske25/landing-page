@@ -55,7 +55,7 @@ function App() {
   const randomUpdateMessageIndex = () => {
     if (shouldShowMessage) {
       const randomCounter = Math.random() * 100;
-      const shouldIncrement = randomCounter > 98;
+      const shouldIncrement = randomCounter > 95;
       if (shouldIncrement) {
         setMessageIndex(messageIndex + 1);
       }
