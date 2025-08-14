@@ -88,7 +88,7 @@ function App() {
 
   const scrambleColors = (e: React.MouseEvent<HTMLDivElement> | undefined) => {
     e?.preventDefault();
-    let prevColor = reverse ? colorTwo : colorOne;
+    const prevColor = reverse ? colorTwo : colorOne;
     const nextColor = getRandomColor();
 
     colorApi.start({
