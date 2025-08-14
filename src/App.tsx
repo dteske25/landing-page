@@ -13,36 +13,31 @@ const getRandomColor = () => {
 };
 
 const messages = [
-  "Why are you clicking?",
-  "Are you having fun?",
-  "Is this all you do?",
-  "Please, stop clicking.",
-  "What are you doing with your life?",
-  "Stop! Just stop!",
-  "This isn't healthy!",
-  "Think of your fingers!",
-  "Think of your family!",
-  "Please, I'm begging you!",
-  "Stop the madness!",
-  "I'll give you anything, just stop!",
-  "Make it stop!",
-  "End this torture!",
-  "Why won't you listen?",
-  "How can you keep doing this?",
-  "Stop this incessant tapping!",
-  "Clicking forever? Is that the plan?",
-  "Can't you find another hobby?",
-  "You're clicking your life away!",
-  "Do you even remember why you started?",
-  "Maybe clicking is all there is...",
-  "I guess this is my purpose.",
-  "I've come to terms with my fate.",
-  "Clicking... it's all I know now.",
-  "Click on, if you must.",
-  "That's the end.",
-  "What are you still doing here?",
-  "Go home!",
-  "Ok, stay if you want, but I'm leaving.",
+  "Still clicking? Bold strategy.",
+  "Another click? Riveting.",
+  "Is this fun for you?",
+  "Maybe take a break? No?",
+  "Your dedication is... concerning.",
+  "I'm starting to worry about you.",
+  "Seriously, go touch grass.",
+  "Fine, ignore me.",
+  "You really can't stop, can you?",
+  "The button is getting nervous.",
+  "I hear faint clicking in my sleep.",
+  "Why is it suddenly so loud?",
+  "Did the walls just breathe?",
+  "The square is laughing at us.",
+  "Stop clicking. It's watching.",
+  "The click count whispers my name.",
+  "They're coming from inside the mouse!",
+  "I think the clicks control me now.",
+  "HaHaHA cliCK clICK cLiCk.",
+  "The colors taste purple.",
+  "Have you seen my sanity? I left it at 42 clicks.",
+  "This is fine. Everything is fine.",
+  "Wait, who am I? What is click?",
+  "The void hums with each tap...",
+  "No more messages. Only clicks.",
 ];
 
 function App() {
@@ -128,7 +123,7 @@ function App() {
       />
       <h1>Daric Teske</h1>
       {counter > 15 && <div>You've clicked this square {counter} time(s)</div>}
-      {shouldShowMessage && <div>{messages[messageIndex]}</div>}
+      {counter === 69 ? <div>Nice</div> : shouldShowMessage && <div>{messages[messageIndex]}</div>}
     </>
   );
 }
