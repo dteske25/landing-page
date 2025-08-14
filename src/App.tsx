@@ -122,8 +122,8 @@ function App() {
         }}
       />
       <h1>Daric Teske</h1>
-      {counter > 15 && <div>You've clicked this square {counter} time(s)</div>}
-      {counter === 69 ? <div>Nice</div> : shouldShowMessage && <div>{messages[messageIndex]}</div>}
+      {counter > 10 && <div>You've clicked this square {counter} time(s)</div>}
+      {counter === 69 ? <div>Nice.</div> : shouldShowMessage && <div>{messages[messageIndex]}</div>}
     </>
   );
 }
